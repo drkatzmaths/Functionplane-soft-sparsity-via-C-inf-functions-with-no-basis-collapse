@@ -7,7 +7,7 @@ c
 c  Compile with:
 c    gfortran -Os -std=legacy rotatem.for -o rotatem
 c
-c  Copyright (C) 1990, 2011, 2018.  All rights reserved
+c  Copyright (C) 1973, 1990, 2011, 2018.  All rights reserved
 c  Jeffrey Owen Katz, Ph.D. <jeffkatz@scientific-consultants.com>
 c  Tel: 631-696-3333
 
