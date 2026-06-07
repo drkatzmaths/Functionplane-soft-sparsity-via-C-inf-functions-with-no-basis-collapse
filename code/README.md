@@ -2,13 +2,13 @@
 
 This directory contains:
 
-- **Fortran source files** (`.f` files): Original 1973 algorithms for Primary Product Functionplane & other rotations
+- **Fortran source files** (`.for` files): Original 1973 algorithms for Primary Product Functionplane & other rotations
 - **Octave/Matlab wrapper files** (`.m` files): Modern wrappers for compatibility with Octave and Matlab
 
 ## Compilation Instructions
 
 ```bash
-gfortran -o program_name [fortran_files.f]
+gfortran -std=legacy -O2 -o program_name -[fortran_files.for]
 ```
 
 ## Usage with Octave/Matlab
