@@ -1,2 +1,93 @@
-# Functionplane-soft-sparsity-via-C-inf-functions-with-no-basis-collapse
-Fortran code for Primary Product Functionplane &amp; other Rotations from 1973, modified for compatibility with gfortran and Octave.  Soft sparsity (simple structure) via component loss functions, gradient optimzation, and contravariant and covariant spaces with a metric to avoid basis collapse.  Predates modern represntational learning.
+# 1970s Sparse Metric Tensors: Representational Learning Engine
+
+## Overview
+
+This repository archives and contextualizes a pioneering representational learning engine implemented in Fortran in the 1970s. The original code demonstrates early work on:
+
+- **Representational Learning**: One of the first implementations of learning through representation discovery
+- **Sparse Structures & Metric Tensors**: Advanced mathematical treatment of sparsity using dual spaces and metric tensor formalism
+- **C∞ Functions & Gradient Optimization**: Smooth, differentiable optimization methods
+- **Modern Compatibility**: Fortran code compiled with gfortran on Linux, with Octave/Matlab-compatible wrapper files
+
+## Repository Structure
+
+```
+Functionplane-soft-sparsity-via-C-inf-functions-with-no-basis-collapse/
+├── README.md                           # This file
+├── code/                               # Fortran source (1970s) + Octave/Matlab wrappers
+│   ├── [Fortran .f files]
+│   └── [Octave/Matlab .m wrapper files]
+├── markdown/                           # Contemporary documentation and analysis
+│   ├── overview.md                     # High-level introduction
+│   ├── technical-analysis.md           # Deep dive into algorithms and concepts
+│   ├── modern-context.md               # Connections to LLMs and contemporary AI
+│   └── [additional documents]
+├── citations/                          # Metadata, references, and journal articles
+│   ├── CITATIONS.md                    # Formatted citations
+│   └── [bibliography files]
+└── zenodo/                             # Links and metadata for Zenodo records
+    └── ZENODO_LINKS.md                 # DOI links and external references
+```
+
+## Building and Using the Code
+
+### Compilation (Linux with gfortran)
+
+```bash
+cd code
+gfortran -o program_name [fortran_files.f]
+```
+
+### Usage with Octave/Matlab
+
+Load the wrapper files (`.m` files) in the `code/` directory:
+
+```octave
+% In Octave/Matlab
+addpath('code/')
+% Call your functions...
+```
+
+## Key References
+
+### Original Publications (1970s)
+
+[To be filled in with DOI links and full citations]
+
+### Zenodo Records
+
+[To be filled in with Zenodo URLs and DOIs]
+
+### Author Information
+
+**ORCID**: [To be added]
+
+## Technical Summary
+
+**Algorithm**: Primary Product Functionplane & Rotations (1973)
+- Soft sparsity (simple structure) via component loss functions
+- Gradient optimization with contravariant and covariant spaces
+- Metric tensor formalism to avoid basis collapse
+- Predates modern representational learning
+
+[To be expanded with detailed technical description]
+
+## Modern Context & Implications
+
+[To be filled in with discussion of how this work relates to contemporary representational learning, LLMs, and epistemology]
+
+## Contributing & Editing
+
+This repository is under active curation. Feel free to:
+- Suggest improvements to documentation
+- Report issues with code compilation or compatibility
+- Propose connections to modern research
+
+## License
+
+[To be specified]
+
+---
+
+**Last Updated**: [Date]
+**Maintained by**: @drkatzmaths
