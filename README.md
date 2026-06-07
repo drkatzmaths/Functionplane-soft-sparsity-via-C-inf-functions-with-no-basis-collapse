@@ -1,0 +1,2 @@
+# Functionplane-soft-sparsity-via-C-inf-functions-with-no-basis-collapse
+Fortran code for Primary Product Functionplane &amp; other Rotations from 1973, modified for compatibility with gfortran and Octave.  Soft sparsity (simple structure) via component loss functions, gradient optimzation, and contravariant and covariant spaces with a metric to avoid basis collapse.  Predates modern represntational learning.
