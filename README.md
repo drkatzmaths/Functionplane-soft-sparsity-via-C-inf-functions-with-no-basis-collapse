@@ -74,15 +74,15 @@ Katz, J. O. (2026). Primary Product Functionplane and Other Factor Rotations
 ## Technical Summary
 
 **Algorithm**: Primary Product Functionplane & Rotations (1973)
-- Soft sparsity (simple structure) via $C^\infty$ component loss functions (no L0 or L1 kludges or workarounds)
+- Soft sparsity (simple structure) via $C\infty$ component loss functions (no L0 or L1 kludges or workarounds, not brittle, robust to noise)
 - Gradient optimization with flow between contravariant and covariant components
 - No need for external constraints: the metric endogenously provides adaptive resistance to excessive obliquity and basis collapse (singularity)
-- Metric and its inverse elegantly avoid basis collapse without requiring any user-set parameters
-- Predates modern representational learning by decades
-- Programmed in 1973 in Fortran on an IBM 360
-- Described by Dr. Katz as the result of his quest to build a mathematically and algorithmically tractable Occam's Razor
-- A "sleeping beauty" partially "awakened" by R. Jennrich in 2004-2006, who cites the original work, and explicity recognizes (around 2005) the fact that it was a "break through" that was mostly ignored for 3 decades
-- R. Jennrich proved that the even a simpler implmentation of the method will recover "perfect" simple structure or sparsity if it exists in the data
+- Metric and its inverse elegantly avoid basis collapse without requiring any user-set parameters or external constraints
+- Predates modern representational learning and the recent movement to natively smooth functions to induce sparsity by decades
+- Programmed in 1973 in Fortran on an IBM 360 and demonstrated working
+- Described by Dr. Katz as the result of his quest to build a mathematically and algorithmically "tractable Occam's Razor"
+- A "sleeping beauty" partially "awakened" by R. Jennrich [2004, Rotation to Simple Loadings Using Component Loss Functions: The Orthogonal Case](https://doi.org/10.1007/BF02295943) and [2006, Rotation to Simple Loadings Using Component Loss Functions: The Oblique Case](https://doi.org/10.1007/s11336-003-1136-B), who cites the original work, and explicity recognizes (in 2004) the fact that it was a "break through" that was mostly ignored for 3 decades
+- R. Jennrich offered a mathematical proof that even a simpler implementation of the method will recover "perfect" simple structure or sparsity if it exists, a very strong finding
 
 Note.  Most of this comes from the originator in 1973, hence the older terminology; the modern fields that have independently rediscovered some of the foundational ideas use different terminology that essential expresses the same mathematical insights as used by Dr. Katz in Primary Product Functionplane
 
@@ -99,7 +99,7 @@ This repository is under active curation. Feel free to:
 - Propose connections to modern research
 - Originally framed in the language of factor analysis (matrices, simple structure) but its inventor says the roots are far deeper, involving metrics and tensors
 
-Note: Some of this needs tweaking by the original inventor; some was written by GitHub Copilot with many prompts.  It is sometimes incorrect.  The Technical summary has been corrected by the originator of the work.
+Note: Some of this needs tweaking by the original inventor; some was written by GitHub Copilot with many prompts.  It is sometimes incorrect.  The Technical summary has been corrected by the originator of the work and is correct.
 
 ## License
 
