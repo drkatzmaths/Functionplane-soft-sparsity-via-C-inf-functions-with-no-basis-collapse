@@ -8,11 +8,14 @@ This directory contains:
 ## Compilation Instructions
 
 ```bash
-gfortran -std=legacy -O2 -o program_name -[fortran_files.for]
+gfortran -std=legacy -O2 -o program_name rotatem.for
 ```
 
 ## Usage with Octave/Matlab
 
-Add this directory to your Octave/Matlab path and call the wrapper functions.
+Add this directory to your Octave/Matlab path, compile and link with
+gfortran, and call the wrapper function from within Octave.  You can
+read the comments in the wrapper function (rotfac.m) to see how to use
+this function within Octave.
 
-[To be expanded with specific function descriptions and examples]
+[To be expanded with specific function descriptions, arguments, and examples]
