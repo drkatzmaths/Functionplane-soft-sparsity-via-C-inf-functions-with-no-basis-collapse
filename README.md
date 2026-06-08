@@ -54,25 +54,38 @@ addpath('code/')
 
 ### Original Publications (1970s)
 
-[To be filled in with DOI links and full citations]
+[Katz, J. O., & Rohlf, F. J. (1974). Functionplane—A new approach to simple structure rotation. Psychometrika, 39(1), 37–51.](https://doi.org/10.1007/BF02291576)
 
-### Zenodo Records
+[Katz, J. O., & Rohlf, F. J. (1975). Primary product functionplane: An oblique rotation to simple structure. Multivariate Behavioral Research, 10(2), 219–231.](https://doi.org/10.1207/s15327906mbr1002_7)
 
-[To be filled in with Zenodo URLs and DOIs]
+## Zenodo Records
+
+<a href="https://doi.org/10.5281/zenodo.20391031">
+<img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20391031.svg"></a>
+
+Katz, J. O. (2026). Primary Product Functionplane and Other Factor Rotations
+[https://doi.org/10.5281/zenodo.20391031](https://doi.org/10.5281/zenodo.20391031)
 
 ### Author Information
+[ORCID ](https://orcid.org/0009-0001-2777-6306)
 
-**ORCID**: [To be added]
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0001--2777--6306-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0001-2777-6306)
 
 ## Technical Summary
 
 **Algorithm**: Primary Product Functionplane & Rotations (1973)
-- Soft sparsity (simple structure) via component loss functions
-- Gradient optimization with contravariant and covariant spaces
-- Metric tensor formalism to avoid basis collapse
-- Predates modern representational learning
+- Soft sparsity (simple structure) via $C^\infty$ component loss functions (no L0 or L1 kludges or workarounds)
+- Gradient optimization with flow between contravariant and covariant components
+- No need for external constraints: the metric endogenously provides adaptive resistance to excessive obliquity and basis collapse (singularity)
+- Metric and its inverse elegantly avoid basis collapse without requiring any user-set parameters
+- Predates modern representational learning by decades
+- Programmed in 1973 in Fortran on an IBM 360
+- Described by Dr. Katz as the result of his quest to build a mathematically and algorithmically tractable Occam's Razor
+- A "sleeping beauty" partially "awakened" by R. Jennrich in 2004-2006, who cites the original work, and explicity recognizes (around 2005) the fact that it was a "break through" that was mostly ignored for 3 decades
+- R. Jennrich proved that the even a simpler implmentation of the method will recover "perfect" simple structure or sparsity if it exists in the data
 
-[To be expanded with detailed and technically description]
+Note.  Most of this comes from the originator in 1973, hence the older terminology; the modern fields that have independently rediscovered some of the foundational ideas use different terminology that essential expresses the same mathematical insights as used by Dr. Katz in Primary Product Functionplane
+
 
 ## Modern Context & Implications
 
@@ -84,7 +97,9 @@ This repository is under active curation. Feel free to:
 - Suggest improvements to documentation
 - Report issues with code compilation or compatibility
 - Propose connections to modern research
-Note: much of this needs re-writing by the real inventor; much was written by GitHub Copilot with many inventor's prompts.  It is often incorrect.
+- Originally framed in the language of factor analysis (matrices, simple structure) but its inventor says the roots are far deeper, involving metrics and tensors
+
+Note: Some of this needs tweaking by the original inventor; some was written by GitHub Copilot with many prompts.  It is sometimes incorrect.  The Technical summary has been corrected by the originator of the work.
 
 ## License
 
