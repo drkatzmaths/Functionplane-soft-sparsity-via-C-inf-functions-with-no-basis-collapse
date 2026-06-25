@@ -35,8 +35,8 @@ This work has been archived on Zenodo for long-term preservation and citability.
 ## External Links
 
 - **GitHub Repository**: https://github.com/drkatzmaths/Functionplane-soft-sparsity-via-C-inf-functions-with-no-basis-collapse
-- **ORCID Profile**: [0009-0001-2777-6306]
-- **Author Website/CV**: [www.scientific-consultants.com]
+- **ORCID Profile**: 0009-0001-2777-6306
+- **Author Website/CV**: www.scientific-consultants.com
 
 ---
 
