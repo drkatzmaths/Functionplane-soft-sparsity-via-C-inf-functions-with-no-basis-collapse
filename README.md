@@ -71,6 +71,9 @@ addpath('code/')
 Katz, J. O. (2026). Primary Product Functionplane and Other Factor Rotations
 [https://doi.org/10.5281/zenodo.20391031](https://doi.org/10.5281/zenodo.20391031)
 
+Katz, J. O. (2026). Primary Product Functionplane: The Mathematical Foundations and its Origins
+[https://doi.org/10.5281/zenodo.22179765](https://doi.org/10.5281/zenodo.22179765)
+
 ### Author Information
 [ORCID ](https://orcid.org/0009-0001-2777-6306)
 
