@@ -42,7 +42,7 @@ Functionplane-soft-sparsity-via-C-inf-functions-with-no-basis-collapse/
 
 ```bash
 cd code
-gfortran -O2 --std=legacy -o rotatem rotatem.for
+gfortran -O3 -std=legacy -fdefault-real-8 -fdefault-double-8 rotatem_real8.for -o rotatem_real8
 ```
 
 ### Usage with Octave/Matlab
