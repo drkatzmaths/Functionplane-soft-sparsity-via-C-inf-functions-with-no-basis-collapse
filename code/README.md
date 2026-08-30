@@ -8,7 +8,7 @@ This directory contains:
 ## Compilation Instructions
 
 ```bash
-gfortran -std=legacy -O2 -o program_name rotatem.for
+gfortran -O3 -std=legacy -fdefault-real-8 -fdefault-double-8 rotatem_real8.for -o rotatem_real8
 ```
 
 ## Usage with Octave/Matlab
