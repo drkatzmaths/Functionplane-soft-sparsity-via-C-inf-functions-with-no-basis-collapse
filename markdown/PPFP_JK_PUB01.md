@@ -108,7 +108,8 @@ This defines a simplicity criteria in the form of an optimization surface on whi
 
 $$\nabla_{\mathbf{T}} C = \frac{\partial}{\partial \mathbf{T}} \sum_{i,j} \exp  \left[ -\left( \frac{\mathbf{P}_{ij}}{w} \right)^2 \right] = \frac{\partial}{\partial \mathbf{T}} \sum_{i,j} \exp \left[ -\left(\frac{(\mathbf{A} \mathbf{T'}^{-1})_{ij}}{w}\right)^2 \right]$$
 
-If we define the matrix $\mathbf{F}$ element wise by 
+If we define the matrix $\mathbf{F}$ element wise by
+
 $$
 \mathbf{F}_{ij} = \mathbf{P}_{ij} \text{ } \exp  \left[ -\left( \frac{\mathbf{P}_{ij}}{w} \right)^2 \right]
 $$
@@ -118,6 +119,7 @@ And $\mathbf{\Psi}$ as
 $$\mathbf{\Psi}=\mathbf{T}'^{-1}$$
 
 the explicit gradient $\nabla_{\mathbf{T}} C$ becomes
+
 $$
 \nabla_{\mathbf{T}} C=\frac{2}{w^2}\mathbf{\Psi F' P} 
 $$
