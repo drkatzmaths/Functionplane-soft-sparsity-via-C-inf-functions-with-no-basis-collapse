@@ -5,8 +5,8 @@
 This work has been archived on Zenodo for long-term preservation and citability.
 
 ### Zenodo Record Details
-. **Primary Product Functionplane: The Mathematical Foundations and its Origins**: [https://doi.org/10.5281/zenodo.22179765]
-. **Primary Product Functionplane and Other Factor Rotations**: [https://doi.org/10.5281/zenodo.21929585]
+- **Primary Product Functionplane: The Mathematical Foundations and its Origins**: [https://doi.org/10.5281/zenodo.22179765]
+- **Primary Product Functionplane and Other Factor Rotations**: [https://doi.org/10.5281/zenodo.21929585]
 
 ### Code and Wrappers
 - **Location**: `/code` directory in this repository
