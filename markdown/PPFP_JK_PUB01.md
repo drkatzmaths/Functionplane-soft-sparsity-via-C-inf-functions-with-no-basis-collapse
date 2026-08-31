@@ -38,7 +38,7 @@ Primary Product Functionplane was the name given to a method for discovering str
 
 The method, originally implemented in IBM 360 Fortran, was novel in 1973 in that:  
 
-1) It employed an infinitely differentiable intrinsically smooth criterion for simplicity [*soft sparsity*], rather than a discontinuous or not everywhere differentiable criterion, such as one based on hyperplane counts or absolute values [in modern terminology, *an $\mathcal{L}_0$ or $\mathcal{L}_1$ model*] or a smoothed, more tractable "kludge" thereof;  
+1) It employed an infinitely differentiable intrinsically smooth criterion for simplicity [*soft sparsity*], rather than a discontinuous or not everywhere differentiable criterion, such as one based on hyperplane counts or absolute values [in modern terminology, *an $\mathcal{L}\_0$ or $\mathcal{L}\_1$ model*] or a smoothed, more tractable "kludge" thereof;  
 2) It avoided excessive collinearity or basis collapse by utilizing a covariant metric tensor ($g_{\nu\lambda}$) and its contravariant inverse ($g^{\nu\lambda}$) to provide a fully adaptive, endogenous geometric control of collinearity without the need for user-adjusted parameters [in modern terminology, *hyperparameters*] for this purpose.  The single parameter that did require user input was a noise bandwidth, which has a real physical meaning;     
 3) It was highly robust to observational noise;  
 4) It yielded an *approximate* Maximum Likelihood Estimation (MLE) [akin to what eventually came to be known as a *redescending M-estimator*] for simplicity under the assumption that small coefficients (noise) were roughly Gaussian, while large coefficients represented the true but relatively few [sparse] signals with an unknown distribution;  
