@@ -21,14 +21,12 @@ I have posted full mathematical development of the model (only parts of which ap
 ```
 Functionplane-soft-sparsity-via-C-inf-functions-with-no-basis-collapse/
 ├── README.md                           # This file
-├── code/                               # Fortran source (1970s) + Octave/Matlab wrappers
-│   ├── [Fortran .f files]
+├── code/                               # Fortran source (1970s, updated) + Octave/Matlab wrappers
+│   ├── [Fortran .for files]
 │   └── [Octave/Matlab .m wrapper files]
-├── markdown/                           # Contemporary documentation and analysis
-│   ├── overview.md                     # High-level introduction
-│   ├── technical-analysis.md           # Deep dive into algorithms and concepts
-│   ├── modern-context.md               # Connections to LLMs and contemporary AI
-│   └── [additional documents]
+├── markdown/                           # Documentation
+│   ├── PPFP_JK_PUB01.md                # Deep mathematics underlying the algorithm
+│   └── [additional documents to be added]
 ├── citations/                          # Metadata, references, and journal articles
 │   ├── CITATIONS.md                    # Formatted citations
 │   └── [bibliography files]
@@ -120,5 +118,5 @@ Creative Commons Attribution 4.0 International
 
 ---
 
-**Last Updated**: 31 Aug 2026
+**Last Updated**: 01 September 2026
 **Maintained by**: @drkatzmaths
