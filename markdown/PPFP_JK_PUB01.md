@@ -12,7 +12,7 @@ keywords: ["soft sparsity", "simplicity", "metric tensor", "differential geometr
 abstract: |
   Primary Product Functionplane was the name given to a method for discovering simplicity [akin to *soft sparsity*] using an infinitely differentiable criterion function [a *component loss function*] together with geometry to make it adaptively averse to excessive collinearity or basis collapse without requiring user-tweaked *constraint parameters*. The method discovers the basis that maximizes the likelihood of the noise under a Gaussian model; signals, lying in the redescending tail, are left unconstrained. Simplicity [soft sparsity] and S/N follow as consequences. The system requires no user-specified *structural* regularization constraints, relying instead on the geometry and a single user-specified parameter defined strictly by the physical bandwidth of the noise floor (not affecting the geometric structure itself). The conceptual framework emerged from a quest to find a tractable Occam's Razor for complex multivariate data spaces.  During its development in the early 1970s, the method was tested to see how well it solved the oblique simple structure rotation problem in factor analysis. Note that here, and in all that follows, the author uses brackets to identify modern terminological mappings, recent notes and added material.
   The method, originally implemented in IBM 360 Fortran, was novel in 1973 in that:  
-  1) It employed an infinitely differentiable intrinsically smooth criterion for simplicity [essentially *soft sparsity*], rather than a discontinuous or not everywhere differentiable criterion, such as one based on hyperplane counts or absolute values [in modern terminology, *an $\mathcal{L}\_0$ or $\mathcal{L}\_1$ model*], or a smoothed more tractable "kludge" thereof;
+  1) It employed an infinitely differentiable intrinsically smooth criterion for simplicity [essentially *soft sparsity*], rather than a discontinuous or not everywhere differentiable criterion, such as one based on hyperplane counts or absolute values [in modern terminology, an $\mathcal{L}\_0$ or $\mathcal{L}\_1$ model], or a smoothed more tractable "kludge" thereof;
   2) It avoided excessive collinearity or basis collapse by utilizing a covariant metric tensor ($g_{\nu\lambda}$) and its contravariant inverse ($g^{\nu\lambda}$) to provide a fully adaptive, endogenous geometric control of collinearity without the need for user-adjusted parameters [in modern terminology, *hyperparameters*] for this purpose. The single parameter that did require user input was a noise bandwidth, which has a real physical meaning;
   3) It was highly robust to observational noise;
   4) It yielded an *approximate* Maximum Likelihood Estimation (MLE) [akin to what later became known as a *redescending M-estimator*] for simplicity [soft sparsity] under the assumption that small coefficients (noise) were roughly Gaussian, while large coefficients represented the true but relatively few [*sparse*] signals with an unknown distribution;
@@ -38,7 +38,7 @@ Primary Product Functionplane was the name given to a method for discovering str
 
 The method, originally implemented in IBM 360 Fortran, was novel in 1973 in that:  
 
-1) It employed an infinitely differentiable intrinsically smooth criterion for simplicity [*soft sparsity*], rather than a discontinuous or not everywhere differentiable criterion, such as one based on hyperplane counts or absolute values [in modern terminology, *an* $\mathcal{L}\_0$ *or* $\mathcal{L}\_1$ *model*] or a smoothed, more tractable "kludge" thereof;  
+1) It employed an infinitely differentiable intrinsically smooth criterion for simplicity [*soft sparsity*], rather than a discontinuous or not everywhere differentiable criterion, such as one based on hyperplane counts or absolute values [in modern terminology, an $\mathcal{L}\_0$ or $\mathcal{L}\_1$ model] or a smoothed, more tractable "kludge" thereof;  
 2) It avoided excessive collinearity or basis collapse by utilizing a covariant metric tensor ($g_{\nu\lambda}$) and its contravariant inverse ($g^{\nu\lambda}$) to provide a fully adaptive, endogenous geometric control of collinearity without the need for user-adjusted parameters [in modern terminology, *hyperparameters*] for this purpose.  The single parameter that did require user input was a noise bandwidth, which has a real physical meaning;     
 3) It was highly robust to observational noise;  
 4) It yielded an *approximate* Maximum Likelihood Estimation (MLE) [akin to what eventually came to be known as a *redescending M-estimator*] for simplicity under the assumption that small coefficients (noise) were roughly Gaussian, while large coefficients represented the true but relatively few [sparse] signals with an unknown distribution;  
@@ -87,11 +87,17 @@ Let $\mathbf{S}$ and $\mathbf{P}$ be $n$ by $m$ matrices.
 Let $\mathbf{T}$ and $\mathbf{\Phi}$ be $m$ by $m$ matrices.
 
 Now let
+
 $$ \mathbf{S} = \mathbf{A} \mathbf{T} $$
+
 $$ \mathbf{P} = \mathbf{A} \mathbf{T'}^{-1} $$
+
 with
+
 $$ \mathbf{\Phi} = \mathbf{T'} \mathbf{T} $$
+
 $$ \mathbf{S} = \mathbf{P} \mathbf{\Phi} $$
+
 $$ \mathbf{P} = \mathbf{S} \mathbf{\Phi}^{-1} $$
 
 Finally, define the scalar $C$, a naturally smooth measure of simplicity [today I would refer to $C$ as an infinitely differentiable measure of *soft sparsity*]
