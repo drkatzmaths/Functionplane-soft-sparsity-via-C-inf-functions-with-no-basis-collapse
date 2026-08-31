@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Functionplane: Soft Sparsity via C-inf Functions with No Basis Collapse"
+authors:
+  - family-names: Katz
+    given-names: Jeffrey Owen
+type: software
+doi: 10.5281/zenodo.21929585
+references:
+  - type: preprint
+    authors:
+      - family-names: Katz
+        given-names: Jeffrey Owen
+    title: "Primary Product Functionplane: The Mathematical Foundations and its Origins"
+    doi: 10.5281/zenodo.22179765
+authors:
+  - family-names: Katz
+    given-names: Jeffrey Owen
+    orcid: 0009-0001-2777-6306
