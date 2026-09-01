@@ -3,16 +3,49 @@ title: "Functionplane: Soft Sparsity via C-inf Functions with No Basis Collapse"
 authors:
   - family-names: Katz
     given-names: Jeffrey Owen
+    orcid: "https://orcid.org/0009-0001-2777-6306"
 type: software
+repository-code: "https://github.com/drkatzmaths/Functionplane-soft-sparsity-via-C-inf-functions-with-no-basis-collapse"
+url: "https://doi.org/10.5281/zenodo.21929585"
 doi: 10.5281/zenodo.21929585
+version: 2.0.0
+date-released: "2026-08-14"
+license: CC-BY-4.0
 references:
   - type: preprint
     authors:
       - family-names: Katz
         given-names: Jeffrey Owen
+        orcid: "https://orcid.org/0009-0001-2777-6306"
     title: "Primary Product Functionplane: The Mathematical Foundations and its Origins"
+    url: "https://doi.org/10.5281/zenodo.22179765
     doi: 10.5281/zenodo.22179765
-authors:
-  - family-names: Katz
-    given-names: Jeffrey Owen
-    orcid: 0009-0001-2777-6306
+    date-published: "2026-08-30"
+  - type: article
+    authors:
+      - family-names: Katz
+        given-names: Jeffrey Owen
+      - family-names: Rohlf
+        given-names: F. James
+    title: "Functionplane—A new approach to simple structure rotation"
+    journal: "Psychometrika"
+    volume: 39
+    issue: 1
+    start: 37
+    end: 51
+    year: 1974
+    doi: 10.1007/BF02291576
+  - type: article
+    authors:
+      - family-names: Katz
+        given-names: Jeffrey Owen
+      - family-names: Rohlf
+        given-names: F. James
+    title: "Primary product functionplane: An oblique rotation to simple structure"
+    journal: "Multivariate Behavioral Research"
+    volume: 10
+    issue: 2
+    start: 219
+    end: 231
+    year: 1975
+    doi: 10.1207/s15327906mbr1002_7
