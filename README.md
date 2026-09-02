@@ -12,9 +12,9 @@ This repository archives a pioneering geometrically adaptive Occam's engine that
 - **Approximate Maximum Likelihood Estimation**:  Under the assumption that small contravariant coefficients reflect gaussian noise, while large coefficients represent infrequent (sparse) signals with an unknown distribution
 - **Modern Compatibility**: Fortran code has been updated over the years and may now be compiled with gfortran on Linux, with an Octave/Matlab-compatible wrapper file provided
 
-The work was originally tested on the problem of oblique rotation in factor analysis, but is broader in its mathematical formulation and original test applications.  It arose out of the author's quest in the late 1960s for an algorithmically and mathematically tractable Occam's Razor.  Due to siloing, publication in psychometrics journals, and the most relevant fields not existing until decades after the material was published, the work became a so-called "sleeping beauty".  It was partially awakened by R. Jennrich (2004) who remarked that it was a "break through" that was mostly ignored for 30 years.  He went on to prove that even a simpler implementation of the method is guaranteed to recover perfect simple structure (sparsity) if it exists in the data, a rather strong conclusion from a famous mathematician. He missed the geometry and did not read my second paper.  Ironically, his own paper went on to become another sleeping beauty.
+The work was originally tested on the problem of oblique rotation in factor analysis, but is broader in its mathematical formulation and original test applications.  It arose out of the author's quest in the late 1960s for an algorithmically and mathematically tractable Occam's Razor.  Due to siloing, publication in psychometrics journals, and the most relevant fields not existing until decades after the material was published, the work became a so-called "sleeping beauty".  It was partially awakened by R. Jennrich (2004) who remarked that it was a "break through" that was mostly ignored for 30 years.  He went on to prove that even a simpler implementation of the method is guaranteed to recover perfect simple structure (sparsity) if it exists in the data, a rather strong conclusion from a famous mathematician. He missed the geometry because he did not read my second paper.  Ironically, his own paper went on to become another sleeping beauty.
 
-I have posted full mathematical development of the model (only parts of which appeared in the original publication), along with its origin story, on GitHub.  In can be found in the markdown subdirectory in this repository.  At some point soon, I will also place on GitHub several examples of how it may be used from within gnu Octave, along with several datasets, including those from my recent work in Raman spectroscopy.  The examples will include instructions, as well as heavily-commented Octave/Matlab code.  I am trying to re-awaken this work that today seems more relevant than I ever imaged it would be.
+I have posted the full mathematical development of the model (only parts of which appeared in the original publication), along with an origin story, on GitHub.  In can be found in the markdown subdirectory in this repository.  At some point soon, I will also place on GitHub several examples of how it may be used from within gnu Octave, along with several datasets, including those from my recent work in Raman spectroscopy.  The examples will include instructions, as well as heavily-commented Octave/Matlab code.  I am trying to re-awaken this work that today seems more relevant than I ever imaged it would be.
 
 ## Repository Structure
 
@@ -69,10 +69,14 @@ addpath('code/')
 Katz, J. O. (2026). Primary Product Functionplane and Other Factor Rotations
 [https://doi.org/10.5281/zenodo.20391031](https://doi.org/10.5281/zenodo.20391031)
 
+<a href="https://doi.org/10.5281/zenodo.22179765">
+<img src="https://zenodo.org/badge/DOI/10.5281/zenodo.22179765.svg"></a>
+
 Katz, J. O. (2026). Primary Product Functionplane: The Mathematical Foundations and its Origins
 [https://doi.org/10.5281/zenodo.22179765](https://doi.org/10.5281/zenodo.22179765)
 
 ### Author Information
+Jeffrey Owen Katz, Ph.D.  (AKA drkatzmaths)
 [ORCID ](https://orcid.org/0009-0001-2777-6306)
 
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--2777--6306-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0001-2777-6306)
@@ -81,19 +85,19 @@ Katz, J. O. (2026). Primary Product Functionplane: The Mathematical Foundations 
 
 **Algorithm**: Primary Product Functionplane & Rotations (1973)
 - Soft sparsity (simple structure) via $C\infty$ component loss functions (no $\mathcal{L}_0$ or $\mathcal{L}_1$ kludges or workarounds, not brittle, very robust to noise)
-- Implements an approximate MLE for optimal soft sparsity under the assumption that the small contravariant elements (noise) are roughly gaussian
+- Implements an approximate maximum likelihood estimator for optimal soft sparsity under the assumption that the small contravariant elements (noise) are roughly Gaussian and that large coefficients (signal) have an unknown distribution
 - Gradient optimization with flow between contravariant and covariant components
-- No need for external constraints: the metric endogenously provides adaptive resistance to excessive obliquity and basis collapse (singularity, which is avoided via a "white hole" repulsion as I dubbed it)
+- No need for externally imposed constraints: the metric endogenously provides adaptive resistance to excessive obliquity and basis collapse (singularity) which is avoided via a "white hole" repulsion
 - Metric and its inverse elegantly avoid basis collapse without requiring any user-set parameters or external constraints
 - Predates modern ML and the recent movement to use natively smooth functions to induce soft sparsity by decades
 - Uses a redescending M-estimator embedded on a manifold as a target of optimization, still novel today
-- Originally programmed in 1973 in Fortran on an IBM 360 and demonstrated working
+- Originally programmed circa 1973 in Fortran on an IBM 360 and demonstrated working
 - Included in NT-SYS (Numerical Taxonomy Systems Package)
 - Described by Dr. Katz as the result of his quest to build a mathematically and algorithmically tractable Occam's Razor engine
-- A "sleeping beauty" partially "awakened" by R. Jennrich [2004, Rotation to Simple Loadings Using Component Loss Functions: The Orthogonal Case](https://doi.org/10.1007/BF02295943) and [2006, Rotation to Simple Loadings Using Component Loss Functions: The Oblique Case](https://doi.org/10.1007/s11336-003-1136-B), who cites the original work, and explicity recognizes (in 2004) the fact that it was a "break through" that was mostly ignored for 3 decades---he missed the geometry!
+- A "sleeping beauty" partially "awakened" by R. Jennrich [2004, Rotation to Simple Loadings Using Component Loss Functions: The Orthogonal Case](https://doi.org/10.1007/BF02295943) and [2006, Rotation to Simple Loadings Using Component Loss Functions: The Oblique Case](https://doi.org/10.1007/s11336-003-1136-B), who cites the first Functinplane paper, and explicitly recognizes (in 2004) the fact that it was a "break through" that was mostly ignored for 3 decades, but missed the geometry which was only in the second Primary Product Functionplane paper
 - R. Jennrich offered a mathematical proof that even a simpler implementation of the method will recover "perfect" simple structure or sparsity if it exists, a very strong finding
 
-Note.  Most of the code and maths and theory come from the originator in 1973, hence the older terminology; the modern fields that have independently rediscovered some of the foundational ideas use different terminology that essentialy expresses some of the same mathematical insights employed by Dr. Katz in Primary Product Functionplane.  In the text here, I used a mix of both modern and old terminology, sometimes distiguishing it, e.g., with parentheses.
+Note.  Most of the code, mathematics and theory come from the originator in 1973, hence the older terminology; the modern fields that have independently rediscovered some of the foundational ideas use different terminology that essentially expresses many of the same mathematical insights employed by Dr. Katz in Primary Product Functionplane.  In the text here, I used a mix of both modern and old terminology, frequently distinguishing it, e.g., with parentheses.
 
 
 ## Modern Context & Implications
@@ -105,12 +109,12 @@ Note.  Most of the code and maths and theory come from the originator in 1973, h
 This repository is under active curation. Feel free to:
 - Suggest improvements to documentation
 - Report issues with code compilation or compatibility
-- Propose connections to modern research (important: this work was done over half a century ago and is now being independently rediscovered piece by piece
+- Propose connections to modern research (important: this work was done over half a century ago and is now being independently rediscovered piece by piece)
 - Partly framed in the language of factor analysis (simplicity, simple structure, oblique bases), and more completely and generally developed in the language of metrics and tensors (all of the mathematics appears in the markdown directory in this repo)
 
-Note: Some material here needs further tweaking by the original inventor (me); some bits above were suggested by GitHub Copilot with a gazillion prompts. It may be occasionally incorrect (noted this with qualifiers).  The Technical summary was written by originator of the work (me), with some help from AI when elaborating connections to current developments (with many steering and corrective prompts).
+Note: Some material here needs further tweaking by the original inventor (me); some bits above were suggested by GitHub Copilot with a gazillion prompts. It may be occasionally incorrect (I noted this with qualifiers).  The Technical summary was written by the originator of the work (me), with some help from AI when elaborating connections to current developments in ML, AI and statistics (with many steering and corrective prompts).
 
-The original maths and the Fortran code (somewhat updated to compile with gfortran and for comaptibility with gnu Octave are aosted here and on Zenodo, and are thoroughly tested and correct.  This material originated with the inventor (me) mostly circa 1973, without any assistance from AI (humor intended, AI did not exist then!).  I verified that the mathematics in the published papers (1974, 1975), in my original maths, and in the Fortran code are all equivalent, maximizing the identical criterion.  I also tried verifying the equivalence using Hugging Chat to which I fed the raw mathematics in markdown, the 1975 Functionplane paper, and the relevant Fortran functions.  It did an impressive job, and came to the same conclusion as did I: that these items all were essentially equivalent, maximizing the identical criterion.  I fed the materials in pairs to avoid overloading the AI.  I must say, that Hugging chat was one of the best AIs I ever tried--I was quite impressed given that most of my experiences with AI are usually frustrating and not that impressive.  It did make some errors, but was mostly correctable with prompting, which was not the case with many AIs on the Web.
+The original mathematics and the Fortran code (somewhat updated to compile with gfortran and for compatibility with gnu Octave) are posted here and on Zenodo, and have been thoroughly tested.  This material originated exclusively with the inventor (me), mostly circa 1973, without any assistance from AI (humor intended, AI did not exist back then!).  I verified that the mathematics in the published papers (1974, 1975), in my original mathematics, and in the Fortran code are all equivalent, maximizing the identical criterion.  I also tried verifying the equivalence using Hugging Chat to which I fed the raw mathematics in markdown, the 1975 Functionplane paper, and the relevant Fortran functions.  It did an good job, and came to the same conclusion as did I: that these items all were essentially equivalent, maximizing the identical criterion.  I prompted the materials in pairs to avoid overloading the AI.  I must say, that Hugging chat was one of the best AIs I had tried---I was impressed given that most of my experiences with AI are frustrating.  It did make some errors, but these were mostly correctable with prompting, which was not the case with many other AIs on the Web.
 
 ## License
 
@@ -118,5 +122,6 @@ Creative Commons Attribution 4.0 International
 
 ---
 
-**Last Updated**: 01 September 2026
-**Maintained by**: @drkatzmaths
+**Last Updated**: 01 September 2026  2026-09-02
+**Maintained by**: drkatzmaths
+
