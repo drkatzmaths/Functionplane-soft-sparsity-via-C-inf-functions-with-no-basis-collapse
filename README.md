@@ -122,6 +122,6 @@ Creative Commons Attribution 4.0 International
 
 ---
 
-**Last Updated**: 01 September 2026  2026-09-02
-**Maintained by**: drkatzmaths
+**Last Updated**: 2026-09-02
+**Maintained by**: @drkatzmaths
 
