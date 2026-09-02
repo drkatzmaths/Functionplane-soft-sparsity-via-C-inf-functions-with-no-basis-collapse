@@ -1,5 +1,6 @@
 cff-version: 1.2.0
 title: "Functionplane: Soft Sparsity via C-inf Functions with No Basis Collapse"
+message: "If you use this software, please cite it as below."
 authors:
   - family-names: Katz
     given-names: Jeffrey Owen
